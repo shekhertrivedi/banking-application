@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<title>
+    XYZ bank
+</title>
+
+<head>
+    <style>
+        body {
+            background: #555;
+            text-align: center;
+            background: white;
+        }
+
+        .content {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to XYZ Bank</h1><br><br>
+    <img src = "bank-logo.png" alt="SVG"/>
+    <h3>Account Details</h3>
+    <a href="/">Home</a><br><br>
+    <b>
+        <table class="center" style="width:40%">
+            <tr style="height:40px">
+                <td>Name</td>
+                <td>{{ .AccountName }}</td>
+            </tr>
+            <tr style="height:40px">
+                <td>Balance</td>
+                <td>{{ .Balance }}</td>
+            </tr>
+        </table><br><br>
+        <table class="center">
+            <a href="/deposit">Deposit</a><br><br>
+            <a href="/withdraw">Withdraw</a>
+        </table>
+    </b>
+</body>
+
+</html>
